@@ -1,0 +1,13 @@
+
+.jumbotron {
+  font-family: 'Pontano Sans', serif;
+  font-size: 48px;
+  text-align: center;
+}
+
+.panel-body {
+  font-family: 'Pontano Sans', serif;
+  font-size: 18px;
+  text-align: center;
+  font-style: italic; 
+}
