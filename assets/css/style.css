@@ -1,6 +1,10 @@
+body {
+  background-image: url(\assets\images\minimal-map.png);
+}
 
 .jumbotron {
   font-family: 'Pontano Sans', serif;
+  background-color: white;
   font-size: 48px;
   text-align: center;
   background-position: center;
@@ -10,6 +14,14 @@
   font-family: 'Pontano Sans', serif;
   font-size: 18px;
   text-align: center;
+  font-style: italic; 
+}
+
+#fade {
+  font-family: 'Pontano Sans', serif;
+  font-size: 18px;
+  text-align: center;
+  text-justify: auto;
   font-style: italic; 
 }
 

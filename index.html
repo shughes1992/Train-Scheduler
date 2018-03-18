@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
   <script>
     // Initialize Firebase
@@ -43,9 +44,9 @@
 
     <div class="row">
       <div class="col-md-12">
-        <div class="panel panel-default">
-          <div class="panel-body" id="fade">"The only way to be sure of catching a train is to miss the train before it" -Anonymous</div>
-        </div>
+
+        <div id="fade">"The only way to be sure of catching a train is to miss the train before it" -Anonymous</div>
+
       </div>
     </div>
 
@@ -64,21 +65,22 @@
                 <input type="text" class="form-control" id="destination" placeholder="i.e. Center City">
               </div>
               <div class="form-group">
-                  <label>First Train Time (HH:mm - military time):</label>
-                  <input type="text" class="form-control" id="trainTime" placeholder="i.e. 05:00 ">
-                </div>
-                <div class="form-group">
-                    <label>Frequency (minutes):</label>
-                    <input type="text" class="form-control" id="frequency" placeholder="i.e. 36">
-                  </div>
+                <label>First Train Time (HH:mm - military time):</label>
+                <input type="text" class="form-control" id="trainTime" placeholder="i.e. 05:00 ">
+              </div>
+              <div class="form-group">
+                <label>Frequency (minutes):</label>
+                <input type="text" class="form-control" id="frequency" placeholder="i.e. 36">
+              </div>
           </div>
         </div>
       </div>
       <div class="col-md-6">
-        <img src="assets/images/subway.gif" alt="Subway" width="450" height="300">
+        <img src="assets/images/minimal-map.png" alt="map" width="450" height="400">
       </div>
     </div>
 
+    <br>
 
     <!-- Panel w. tabler where results are going to append -->
     <div class="panel panel-default">
