@@ -3,6 +3,7 @@
   font-family: 'Pontano Sans', serif;
   font-size: 48px;
   text-align: center;
+  background-position: center;
 }
 
 .panel-body {
@@ -10,4 +11,17 @@
   font-size: 18px;
   text-align: center;
   font-style: italic; 
+}
+
+.panel-heading {
+  font-family: 'Pontano Sans', serif;
+  font-weight: bold;
+
+}
+
+#trainForm {
+  font-family: 'Pontano Sans', serif;
+  font-size: 13px;
+  text-align: left;
+  font-weight: bold;
 }

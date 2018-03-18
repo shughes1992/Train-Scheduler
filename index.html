@@ -6,6 +6,8 @@
   <title>Train Scheduler</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="assets\CSS\style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/javascript/app.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
 </head>
@@ -31,7 +33,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="jumbotron">
-          <h1>Septa Subway Scheduler
+          <h1>Sam's Swifty Subway Scheduler
           </h1>
         </div>
       </div>
@@ -42,41 +44,53 @@
     <div class="row">
       <div class="col-md-12">
         <div class="panel panel-default">
-          <div class="panel-body">"The only way to be sure of catching a train is to miss the train before it" -Anonymous</div>
+          <div class="panel-body" id="fade">"The only way to be sure of catching a train is to miss the train before it" -Anonymous</div>
         </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-6">
-        <p>
-          Lorizzle ipsum yo mamma sit amizzle, fo shizzle adipiscing shizznit. Nullam sapien velizzle, hizzle volutpizzle, fizzle fo
-          shizzle mah nizzle fo rizzle, mah home g-dizzle, gravida vel, gangster. Pellentesque for sure go to hizzle. Sed
-          eros. Fusce at dolor gangsta fo shizzle mah nizzle fo rizzle, mah home g-dizzle tempizzle bling bling. Maurizzle
-          pellentesque nibh et turpizzle. Vestibulum izzle tortizzle. Pellentesque check out this fo shizzle my nizzle nisi.
-          Yippiyo ass tellivizzle platea dictumst. Funky fresh dapibizzle. Crazy break yo neck, yall urna, pretizzle owned,
-          mattizzle ac, eleifend vitae, nunc. suscipit. Integer semper velit sizzle purus. Praesent shit turpizzle black
-          tellivizzle check out this molestie. Vivamus my shizz tortor vizzle break yo neck, yall. Quisque sizzle ornare
-          magna. Doggy check out this, nisl brizzle bibendizzle egestas, magna dolor away, ac mammasay mammasa mamma oo sa
-          you son of a bizzle stuff quis augue. Maecenas tellivizzle elizzle ass amizzle you son of a bizzle adipiscing bow
-          wow wow.
-        </p>
-        <p>
-          Vivamizzle fo shizzle my nizzle pede shizzle my nizzle crocodizzle lacizzle. In rhoncus fo shizzle leo. Lorem gangsta dolizzle
-          boom shackalack phat, consectetuer adipiscing elit. I saw beyonces tizzles and my pizzle went crizzle nisi ligula,
-          break it down sit amizzle, shizzle my nizzle crocodizzle sizzle, fo shizzle mattizzle, libero. Curabitizzle semper
-          faucibizzle diam. Ut non leo. Shit sed risus shiznit diam accumsizzle sheezy. Quisque yippiyo metus laoreet nunc.
-          Aenizzle sodales, bizzle quizzle varius lacinia, bling bling dizzle commodo felizzle, nec ma nizzle erizzle shizzle
-          my nizzle crocodizzle sizzle nisi. Rizzle leo boom shackalack, aliquizzle my shizz amet, pot vitae, pulvinizzle
-          pulvinizzle, you son of a bizzle.
-        </p>
+        <div class="panel panel-default">
+          <div class="panel-heading">Add Train</div>
+          <div class="panel-body" id="trainForm">
+            <form>
+              <div class="form-group">
+                <label>Origin:</label>
+                <input type="text" class="form-control" id="origin" placeholder="i.e. Girard Station">
+              </div>
+              <div class="form-group">
+                <label>Destination:</label>
+                <input type="text" class="form-control" id="destination" placeholder="i.e. Center City">
+              </div>
+              <div class="form-group">
+                  <label>First Train Time (HH:mm - military time):</label>
+                  <input type="text" class="form-control" id="trainTime" placeholder="i.e. 05:00 ">
+                </div>
+                <div class="form-group">
+                    <label>Frequency (minutes):</label>
+                    <input type="text" class="form-control" id="frequency" placeholder="i.e. 36">
+                  </div>
+          </div>
+        </div>
       </div>
       <div class="col-md-6">
-        <img src="assets/images/subway.gif" alt="Subway" width="450" height="480">
+        <img src="assets/images/subway.gif" alt="Subway" width="450" height="300">
       </div>
     </div>
 
 
+    <!-- Panel w. tabler where results are going to append -->
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Current Subway Schedule</div>
+
+      <!-- Table -->
+      <table class="table">
+        ...
+      </table>
+    </div>
+  </div>
 
 
 
