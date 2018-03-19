@@ -8,8 +8,6 @@
   <link rel="stylesheet" type="text/css" href="assets\CSS\style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="assets/javascript/app.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
 </head>
 
 <body>
@@ -28,30 +26,20 @@
     firebase.initializeApp(config);
 
   </script>
-  <!-- adding jumbotron header -->
 
+  <!-- adding header -->
+  <header>
+    <h1>Subway Scheduler</h1>
+  </header>
+
+  <br>
+
+  <!-- Adding train quote here -->
   <div class="container">
+    <br>
+    <br>
     <div class="row">
-      <div class="col-md-12">
-        <div class="jumbotron">
-          <h1>Sam's Swifty Subway Scheduler
-          </h1>
-        </div>
-      </div>
-    </div>
-
-    <!-- Adding train quote here -->
-
-    <div class="row">
-      <div class="col-md-12">
-
-        <div id="fade">"The only way to be sure of catching a train is to miss the train before it" -Anonymous</div>
-
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-4" id="addTrainDiv">
         <div class="panel panel-default">
           <div class="panel-heading">Add Train</div>
           <div class="panel-body" id="trainForm">
@@ -72,30 +60,33 @@
                 <label>Frequency (minutes):</label>
                 <input type="text" class="form-control" id="frequency" placeholder="i.e. 36">
               </div>
+              <div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <img src="assets/images/minimal-map.png" alt="map" width="450" height="400">
+
+      <div class="col-md-2"></div>
+      <!-- Panel w. tabler where results are going to append -->
+
+      <div class="col-md-6" id="scheduleDiv">
+        <div class="panel panel-default">
+          <!-- Default panel contents -->
+          <div class="panel-heading">Current Subway Schedule</div>
+
+          <!-- Table -->
+          <table class="table">
+            ...
+          </table>
+        </div>
       </div>
-    </div>
 
+    </div>
     <br>
-
-    <!-- Panel w. tabler where results are going to append -->
-    <div class="panel panel-default">
-      <!-- Default panel contents -->
-      <div class="panel-heading">Current Subway Schedule</div>
-
-      <!-- Table -->
-      <table class="table">
-        ...
-      </table>
+    <div class="footer navbar-fixed-bottom">
+      <p>Made by Samantha Hughes</p>
     </div>
-  </div>
-
-
-
 
 </body>
 
