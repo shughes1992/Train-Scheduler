@@ -31,7 +31,7 @@ h1 {
 }
 body { 
   color: #0c0c0c; 
-  background-image: url(https://c.stocksy.com/a/djO100/z0/333413.jpg);
+  background-image: url(../images/minimal-map.png);
   background-repeat: no-repeat;
   background-position:top;
   background-attachment: fixed; 
@@ -50,7 +50,7 @@ body {
     border: 6px solid #000;
   }
   
-}
+
 
 .header {
   font-family: 'IBM Plex Serif', serif;
@@ -94,6 +94,7 @@ body {
   height: 75px;
   text-align: center;
   font-family: 'Open Sans',serif;
+  background-color: white;
 }
 /* test */
 

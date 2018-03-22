@@ -4,28 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Train Scheduler</title>
+  <!-- link to Bootstrap stylesheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <!-- link to personal style sheet -->
   <link rel="stylesheet" type="text/css" href="assets\CSS\style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="assets/javascript/app.js"></script>
+
 </head>
 
 <body>
-
-  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyAKLXriM3XzN-4FhgzZzbgcFA_LBR7pInU",
-      authDomain: "train-scheduler-56f64.firebaseapp.com",
-      databaseURL: "https://train-scheduler-56f64.firebaseio.com",
-      projectId: "train-scheduler-56f64",
-      storageBucket: "train-scheduler-56f64.appspot.com",
-      messagingSenderId: "19726156910"
-    };
-    firebase.initializeApp(config);
-
-  </script>
+<!-- Firebase javscript link -->
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
 
   <!-- adding header -->
   <header>
@@ -60,8 +48,9 @@
                 <label>Frequency (minutes):</label>
                 <input type="text" class="form-control" id="frequency" placeholder="i.e. 36">
               </div>
+
               <div>
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="submit" class="btn btn-default" id="submit-button">Submit</button>
               </div>
           </div>
         </div>
@@ -77,8 +66,33 @@
 
           <!-- Table -->
           <table class="table">
-            ...
-          </table>
+                <thead>
+                  <tr>
+                    <th>Origin:</th>
+                    <th>Destination:</th>
+                    <th>Frequency:</th>
+                    <th>Next Arrival:</th>
+                    <th>Minutes Away:</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Girard</td>
+                    <td>Center city</td>
+                    <td>12</td>
+                    <td>3pm</td>
+                    <th>45</th>
+                  </tr>
+                  <tr>
+                    <td>Old City</td>
+                    <td>Center city</td>
+                    <td>10</td>
+                    <td>4:14</td>
+                    <th>2</th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
         </div>
       </div>
 
@@ -87,6 +101,11 @@
     <div class="footer navbar-fixed-bottom">
       <p>Made by Samantha Hughes</p>
     </div>
+
+
+    <!-- link to jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
 </body>
 
