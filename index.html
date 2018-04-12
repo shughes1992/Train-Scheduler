@@ -4,16 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Train Scheduler</title>
+  <!-- link to jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   <!-- link to Bootstrap stylesheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   <!-- link to personal style sheet -->
   <link rel="stylesheet" type="text/css" href="assets\CSS\style.css">
+  <!-- link to BootStrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <!-- Link to moment.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
+
+  <script href="assets\javascript\app.js"></script>
 
 </head>
 
 <body>
-<!-- Firebase javscript link -->
-<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+  <!-- Firebase javscript link -->
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
 
   <!-- adding header -->
   <header>
@@ -66,45 +76,46 @@
 
           <!-- Table -->
           <table class="table">
-                <thead>
-                  <tr>
-                    <th>Origin:</th>
-                    <th>Destination:</th>
-                    <th>Frequency:</th>
-                    <th>Next Arrival:</th>
-                    <th>Minutes Away:</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Girard</td>
-                    <td>Center city</td>
-                    <td>12</td>
-                    <td>3pm</td>
-                    <th>45</th>
-                  </tr>
-                  <tr>
-                    <td>Old City</td>
-                    <td>Center city</td>
-                    <td>10</td>
-                    <td>4:14</td>
-                    <th>2</th>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <thead>
+              <tr>
+                <th>Origin:</th>
+                <th>Destination:</th>
+                <th>Frequency:</th>
+                <th>Next Arrival:</th>
+                <th>Minutes Away:</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Girard</td>
+                <td>Center city</td>
+                <td>12</td>
+                <td>3pm</td>
+                <th>45</th>
+              </tr>
+              <tr>
+                <td>Old City</td>
+                <td>Center city</td>
+                <td>10</td>
+                <td>4:14</td>
+                <th>2</th>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-
-    </div>
-    <br>
-    <div class="footer navbar-fixed-bottom">
-      <p>Made by Samantha Hughes</p>
     </div>
 
+  </div>
+  <br>
+  <div class="footer navbar-fixed-bottom">
+    <p>Made by Samantha Hughes</p>
+  </div>
 
-    <!-- link to jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- link to jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
 
 </body>
