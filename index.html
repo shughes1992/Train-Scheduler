@@ -17,7 +17,7 @@
   <!-- Link to moment.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
 
-  <script href="assets\javascript\app.js"></script>
+ 
 
 </head>
 
@@ -52,7 +52,7 @@
               </div>
               <div class="form-group">
                 <label>First Train Time (HH:mm - military time):</label>
-                <input type="text" class="form-control" id="trainTime" placeholder="i.e. 05:00 ">
+                <input type="text" class="form-control" id="firstArrival" placeholder="i.e. 05:00 ">
               </div>
               <div class="form-group">
                 <label>Frequency (minutes):</label>
@@ -80,6 +80,7 @@
               <tr>
                 <th>Origin:</th>
                 <th>Destination:</th>
+                <th>First Train Time</th>
                 <th>Frequency:</th>
                 <th>Next Arrival:</th>
                 <th>Minutes Away:</th>
@@ -89,15 +90,18 @@
               <tr>
                 <td>Girard</td>
                 <td>Center city</td>
-                <td>12</td>
+                <td>12pm</td>
+                <th>45</th>
                 <td>3pm</td>
                 <th>45</th>
+                
               </tr>
               <tr>
                 <td>Old City</td>
                 <td>Center city</td>
-                <td>10</td>
-                <td>4:14</td>
+                <td>10pm</td>
+                <th>22</th>
+                <td>4:14am</td>
                 <th>2</th>
               </tr>
             </tbody>
@@ -116,7 +120,7 @@
   <!-- link to jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-
+  <script src="assets/javascript/app.js"></script>
 
 </body>
 

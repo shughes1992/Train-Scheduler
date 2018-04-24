@@ -1,4 +1,4 @@
-
+console.log("this is working")
 // Initialize Firebase
 var config = {
     apiKey: "AIzaSyAKLXriM3XzN-4FhgzZzbgcFA_LBR7pInU",
@@ -13,16 +13,42 @@ firebase.initializeApp(config);
 // Creating a variable to reference the database subset of Firebase (there are multiple i.e. auth,storage etc.)
 var database = firebase.database();
 
-// Whenever a user clicks the click button
-$("#submit-button").on("click", function () {
+database.ref().on("child_added", function(snapshot) {
+console.log(snapshot.val())
 
+var originData = snapshot.val().origin;
+var destinationData = snapshot.val().destination;
+var firstArrivalData = snapshot.val().firstArrival;
+var frequencyData = snapshot.val().frequency;
+
+var timeArray = firstArrivalData.split(":")
+var trainTime = moment().hours(timeArray[0]).minutes(timeArray[1])
+
+console.log(trainTime);
+
+var minutesAway = 42;
+var nextArrival = 0913;
+var newRow = "<tr><td>" + originData + "</td><td>" + destinationData + "</td><td>" + firstArrivalData + "</td><td>" + frequencyData + "</td><td>" + nextArrival + "</td><td>" + minutesAway + "</td></tr>"
+
+$(".table").append(newRow);
+})
+
+// Whenever a user clicks the click button
+$("#submit-button").on("click", function (event) {
+    event.preventDefault();
     var origin = $("#origin").val().trim();
     var destination = $("#destination").val().trim();
-    var trainTime = moment($("#trainTime").val().trim(),"HH:mm".subtract(10,"years").format("x"));
     var frequency = $("#frequency").val().trim();
+    var firstArrival = $("#firstArrival").val().trim();
 
 
-    console.log(trainTime)
+
+    database.ref().push({
+        origin: origin,
+        destination: destination,
+        firstArrival: firstArrival,
+        frequency: frequency
+    }) 
 });
 
 
