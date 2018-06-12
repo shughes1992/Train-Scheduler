@@ -22,7 +22,7 @@ var firstArrivalData = snapshot.val().firstArrival;
 var frequencyData = snapshot.val().frequency;
 
 var timeArray = firstArrivalData.split(":")
-var trainTime = moment().hours(timeArray[0]).minutes(timeArray[1])
+var trainTime = moment().hours(timeArray[0]).minutes(timeArray[1]);
 
 console.log(trainTime);
 
